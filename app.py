@@ -6,7 +6,6 @@ from pathlib import Path
 
 import streamlit as st
 
-# Ensure subfolders are importable
 ROOT = Path(__file__).parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "multi_agents"))
@@ -17,7 +16,6 @@ sys.path.insert(0, str(ROOT / "multi_tools" / "skills"))
 
 from evaluator import evaluate_with_judge
 
-# Import engines
 orchestrator_available = False
 tools_agent_available = False
 
@@ -43,25 +41,25 @@ def run_orchestrator(query: str) -> dict:
     nr1_framework = get_nr1_requirements()
     company_document = get_company_document()
 
-    result = asyncio.run(
-        orchestrator.run_compliance_analysis(query, nr1_framework, company_document)
-    )
-    return result
+    try:
+        loop = asyncio.get_event_loop()
+        if loop.is_running():
+            import nest_asyncio
+            nest_asyncio.apply()
+            return loop.run_until_complete(
+                orchestrator.run_compliance_analysis(query, nr1_framework, company_document)
+            )
+    except RuntimeError:
+        pass
+
+    return asyncio.run(orchestrator.run_compliance_analysis(query, nr1_framework, company_document))
 
 
 def run_tools_agent(query: str) -> dict:
     if not tools_agent_available:
         return {"error": f"Multi-Tools agent unavailable: {tools_error}"}
 
-    result = tools_compliance_agent(query)
-    return result
-
-
-def save_json(result: dict, filename: str) -> str:
-    path = ROOT / filename
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(result, f, indent=2, ensure_ascii=False)
-    return str(path)
+    return tools_compliance_agent(query)
 
 
 def run_single_mode():
@@ -99,7 +97,7 @@ def run_evaluation_mode():
     
     dataset_path = ROOT / "data" / "nr1_benchmark.json"
     if not dataset_path.exists():
-        st.error("`eval_dataset.json` not found in root path. Please create it first.")
+        st.error(f"`nr1_benchmark.json` not found in `{dataset_path}`. Please create it first.")
         return
 
     with open(dataset_path, "r", encoding="utf-8") as f:
@@ -118,15 +116,12 @@ def run_evaluation_mode():
         for idx, item in enumerate(dataset):
             st.write(f"Evaluating **[{item['id']}] Level {item['level']}**...")
             
-            # 1. Run Query through Selected Engine
             if engine_choice == "Multi-Agents":
                 output = run_orchestrator(item["query_pt"])
             else:
                 output = run_tools_agent(item["query_pt"])
             
             raw_text = json.dumps(output, ensure_ascii=False)
-
-            # 2. Judge with LLM
             judge_res = evaluate_with_judge(item, raw_text)
 
             results.append({
@@ -141,9 +136,13 @@ def run_evaluation_mode():
             })
             progress_bar.progress((idx + 1) / len(dataset))
 
+        st.session_state.benchmark_results = results
         st.success("Benchmark completed!")
 
-        # Step 4: Display Aggregate Metrics
+    # Persist results view across UI component rerenders
+    if "benchmark_results" in st.session_state and st.session_state.benchmark_results:
+        results = st.session_state.benchmark_results
+        
         st.subheader("Aggregated Metrics")
         avg_score = sum(r["score"] for r in results) / len(results) if results else 0
         total_hallucinations = sum(len(r["hallucinations"]) for r in results)
@@ -153,7 +152,6 @@ def run_evaluation_mode():
         col2.metric("Total Items Tested", len(results))
         col3.metric("Total Hallucination Flags", total_hallucinations)
 
-        # Per-Level Aggregation Table
         st.write("#### Performance by Level")
         level_scores = {}
         for r in results:
@@ -166,7 +164,6 @@ def run_evaluation_mode():
         ]
         st.table(level_summary)
 
-        # Step 5: Item-by-Item Breakdown Explorer
         st.subheader("Item Breakdown Explorer")
         for r in results:
             with st.expander(f"[{r['id']}] Level {r['level']} — Score: {r['score']*100:.0f}%"):

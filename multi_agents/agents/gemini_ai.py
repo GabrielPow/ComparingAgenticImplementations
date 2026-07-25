@@ -1,40 +1,49 @@
 import os
+import json
+import sys
 from dotenv import load_dotenv
 from google import genai
-from google.genai.types import GenerateContentConfig
-import json
-import re
-import sys
+from google.genai import types
+from pydantic import BaseModel, Field
+
 sys.path.append('../..')
 from data.nr1_clauses import get_nr1_requirements, get_requirement_by_id
 
-
-# Load API key
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 
 if not api_key:
     raise ValueError("Missing GEMINI_API_KEY in .env file")
 
-# Configure Gemini
 model_id = "gemini-2.5-flash"
 client = genai.Client(api_key=api_key)
 
+# Pydantic schema for QA Agent validation structured output
+class ValidationResponse(BaseModel):
+    validation_status: str = Field(description="Must be either 'PASS' or 'NEEDS REVIEW'")
+    consistency_check: str
+    evidence_verification: str
+    hallucination_check: str
+    recommendation_viability: str
+    issues_found: list[str]
 
-def call_gemini(prompt: str, system_instruction: str = "") -> str:
-    """Helper to call Gemini with a prompt and optional system instruction."""
-    response = client.models.generate_content(
+async def call_gemini(prompt: str, system_instruction: str = "", response_schema=None) -> str:
+    """Async helper using client.aio for high-performance non-blocking API calls."""
+    config = types.GenerateContentConfig(
+        system_instruction=system_instruction if system_instruction else None,
+        response_mime_type="application/json" if response_schema else "text/plain",
+        response_schema=response_schema if response_schema else None
+    )
+    
+    response = await client.aio.models.generate_content(
         model=model_id,
         contents=prompt,
-        config=GenerateContentConfig(
-            system_instruction=system_instruction,
-        ) if system_instruction else None
+        config=config
     )
     return response.text.strip()
 
 
-def orchestrator_decompose(query: str, nr1_requirements: list) -> str:
-    """Orchestrator Agent: Decompose compliance query into analysis steps"""
+async def orchestrator_decompose(query: str, nr1_requirements: list) -> str:
     system_instruction = """You are a Compliance Analysis Orchestrator. Your role is to:
     - Receive a compliance query
     - Break it into specific analysis tasks
@@ -47,23 +56,15 @@ def orchestrator_decompose(query: str, nr1_requirements: list) -> str:
     3. Analysis Steps
     4. Expected Outputs"""
     
-    prompt = f"""Query: {query}
-    
-Available NR-1 Requirements: {', '.join(nr1_requirements)}
-
-Decompose this compliance analysis into specific steps."""
-    
-    result = call_gemini(prompt, system_instruction)
-    return result
+    prompt = f"""Query: {query}\nAvailable NR-1 Requirements: {', '.join(nr1_requirements)}\nDecompose this compliance analysis into specific steps."""
+    return await call_gemini(prompt, system_instruction)
 
 
-def retrieval_agent_fetch(query: str, nr1_framework: dict) -> str:
-    """Retrieval Agent: Extract relevant NR-1 clauses and framework sections"""
+async def retrieval_agent_fetch(query: str, nr1_framework: dict) -> str:
     system_instruction = """You are a Compliance Document Analyst. Your role is to:
     - Analyze the query to understand compliance concerns
     - Identify relevant NR-1 clauses from the framework
     - Extract specific requirements and details
-    - Present findings in a structured format
     
     Format your response with:
     1. Relevant NR-1 IDs and Titles
@@ -72,68 +73,31 @@ def retrieval_agent_fetch(query: str, nr1_framework: dict) -> str:
     4. Categories"""
     
     nr1_text = json.dumps(nr1_framework, indent=2)
-    prompt = f"""Compliance Query: {query}
-
-NR-1 Framework:
-{nr1_text}
-
-Identify and extract all relevant NR-1 clauses that apply to this query."""
-    
-    result = call_gemini(prompt, system_instruction)
-    return result
+    prompt = f"""Compliance Query: {query}\n\nNR-1 Framework:\n{nr1_text}\n\nIdentify and extract all relevant NR-1 clauses that apply to this query."""
+    return await call_gemini(prompt, system_instruction)
 
 
-def compliance_agent_analyze(retrieved_clauses: str, company_document: dict) -> str:
-    """Compliance Agent: Perform gap analysis between document and requirements"""
+async def compliance_agent_analyze(retrieved_clauses: str, company_document: dict) -> str:
     system_instruction = """You are a Compliance Gap Analyst. Your role is to:
     - Compare company documentation against NR-1 requirements
     - Identify gaps, weaknesses, and non-compliance areas
     - Assess risk severity for each gap
-    - Suggest remediation steps
     
     Format your response with:
     1. Gap Summary (overall compliance score)
     2. Critical Gaps (must fix)
     3. High Priority Gaps (should fix)
-    4. Medium Priority Gaps
-    5. Recommendations for Each Gap
-    6. Overall Risk Assessment"""
+    4. Recommendations for Each Gap"""
     
     company_doc_text = json.dumps(company_document, indent=2)
-    prompt = f"""Relevant NR-1 Requirements:
-{retrieved_clauses}
+    prompt = f"""Relevant NR-1 Requirements:\n{retrieved_clauses}\n\nCompany Document:\n{company_doc_text}\n\nPerform a detailed gap analysis."""
+    return await call_gemini(prompt, system_instruction)
 
-Company Document:
-{company_doc_text}
 
-Perform a detailed gap analysis. Compare what the company document says with what NR-1 requires."""
+async def qa_agent_validate(compliance_analysis: str) -> dict:
+    system_instruction = """You are a Compliance QA Validator. Review the compliance analysis for consistency, accuracy, and absence of hallucinations."""
+    prompt = f"""Compliance Analysis to Validate:\n{compliance_analysis}\n\nValidate this analysis for accuracy, consistency, and evidence justification."""
     
-    result = call_gemini(prompt, system_instruction)
-    return result
-
-
-def qa_agent_validate(compliance_analysis: str) -> str:
-    """QA Validation Agent: Verify analysis for consistency and hallucinations"""
-    system_instruction = """You are a Compliance QA Validator. Your role is to:
-    - Review compliance analysis for logical consistency
-    - Check for hallucinations or unsupported claims
-    - Verify all gaps are justified with evidence
-    - Ensure recommendations are practical and traceable
-    
-    Format your response with:
-    1. Validation Status (PASS / NEEDS REVIEW)
-    2. Consistency Check (any contradictions?)
-    3. Evidence Verification (are claims supported?)
-    4. Hallucination Check (any unsupported claims?)
-    5. Recommendation Viability
-    6. Issues Found (if any)"""
-    
-    prompt = f"""Compliance Analysis to Validate:
-{compliance_analysis}
-
-Validate this analysis for accuracy, consistency, and absence of hallucinations.
-Are all claims properly supported? Are recommendations practical?"""
-    
-    result = call_gemini(prompt, system_instruction)
-    return result
-
+    # Returns structured JSON matching ValidationResponse
+    raw_json = await call_gemini(prompt, system_instruction, response_schema=ValidationResponse)
+    return json.loads(raw_json)

@@ -1,20 +1,24 @@
 {
-  "company": "TechCorp Inc",
-  "document_type": "Politica de Seguranca e Saude no Trabalho (NR-1 / PGR)",
+  "company": "TechCorp Soluções Industriais S.A.",
+  "document_type": "Política Interna de Segurança e Saúde no Trabalho (SST) / PGR",
+  "version": "2026.1",
   "metadata": {
-    "cnpj": "00.000.000/0001-00",
-    "grau_de_risco": 2,
-    "total_colaboradores": 120,
+    "cnpj": "12.345.678/0001-90",
+    "grau_de_risco": 3,
+    "total_colaboradores": 250,
     "has_certificacao_iso45001": false
   },
   "clauses": {
-    "pgr_implementation": "A empresa mantem um Programa de Gerenciamento de Riscos (PGR) atualizado por estabelecimento, contendo Inventario de Riscos Ocupacionais e Plano de Acao.",
-    "risk_inventory_retention": "O historico de atualizacoes do inventario de riscos ocupacionais e mantido guardado pelo periodo minimo de 20 anos em meio digital.",
-    "pgr_review_period": "A avaliacao de riscos ocupacionais do PGR e revisada ordinariamente a cada 2 anos, ou extraordinariamente em caso de reformas, novos riscos ou acidentes.",
-    "right_of_refusal": "O trabalhador pode interromper suas atividades quando constatar, por motivos razoaveis, situacao de risco grave e iminente para sua vida ou saude, comunicando imediatamente seu superior.",
-    "training_and_capacity": "Todos os colaboradores passam por treinamento inicial em SST antes do inicio das funcoes, alem de treinamentos periodicos e eventuais conforme exigi a norma.",
-    "contractor_management": "A empresa estende suas medidas de prevencao aos prestadores de servicos e contratados que atuam em suas dependencias, incluindo a fiscalizacao de MEIs.",
-    "document_digitization": "Os documentos fisicos de SST digitados utilizam certificado digital ICP-Brasil, garantindo integridade, autenticidade e rastreabilidade conforme o item 1.6.4 da NR-1.",
-    "harassment_prevention": "A empresa mantem regras de conduta sobre assedio sexual e outras formas de violencia nas normas internas, realizando capacitacoes anuais a cada 12 meses."
+    "pgr_retention": "O histórico de atualizações do inventário de riscos ocupacionais do PGR será arquivado e mantido pelo período de 5 anos em nossos servidores locais.",
+    "pgr_review_cadence": "A avaliação de riscos do PGR é revisada ordinariamente a cada 4 anos. Em caso de reformas operacionais ou introdução de novas máquinas automatizadas, a revisão aguardará o ciclo quadrenual regular.",
+    "hierarchy_of_controls": "Para mitigação de perigos identificados nos postos de trabalho, a empresa adota prioritariamente o fornecimento de Equipamentos de Proteção Individual (EPI), deixando medidas de proteção coletiva para casos excepcionais.",
+    "right_of_refusal": "Caso identifique risco no posto de trabalho, o trabalhador deve solicitar autorização prévia por escrito à diretoria antes de interromper suas atividades, sob pena de sanção disciplinar.",
+    "contractor_management": "Empresas contratadas e MEIs que prestam serviços nas instalações da TechCorp são 100% responsáveis por sua própria segurança e ficam integralmente excluídos do PGR da TechCorp.",
+    "training_certification": "A comprovação dos treinamentos de SST será feita exclusivamente via lista de presença coletiva, dispensando a emissão e entrega de certificados individuais aos trabalhadores.",
+    "ead_practical_training": "Treinamentos práticos de operação de máquinas pesadas serão realizados integralmente na modalidade EAD (100% online) via plataforma E-learning.",
+    "digital_documentation": "Documentos físicos de SST assinados manualmente serão digitalizados e armazenados em pasta compartilhada na nuvem sem necessidade de certificado digital ICP-Brasil ou criptografia em trânsito.",
+    "harassment_prevention": "A empresa realiza palestras sobre prevenção ao assédio sexual a cada 3 anos, devendo todas as denúncias ser identificadas com nome e CPF do denunciante para apuração interna.",
+    "trade_union_access": "Em razão do sigilo industrial e comercial de nossos processos produtivos, o inventário de riscos e o plano de ação do PGR são de uso estritamente confidencial e não serão disponibilizados ao sindicato da categoria.",
+    "post_accident_protocol": "Na ocorrência de acidente de trabalho grave sem fatalidade, a empresa registrará a ocorrência internamente, sendo desnecessária a reavaliação antecipada dos riscos do setor ou realização de treinamento eventual."
   }
 }
