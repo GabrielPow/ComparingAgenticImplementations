@@ -3,7 +3,7 @@ import json
 import os
 from dotenv import load_dotenv
 from google import genai
-from google.genai.types import GenerateContentConfig
+from google.genai import types
 
 # Configure Gemini API key
 # Load API key
@@ -62,7 +62,7 @@ def evaluate_with_judge(item: dict, system_output_text: str) -> dict:
     try:
         response = client.models.generate_content(
             formatted_prompt,
-            config=GenerateContentConfig{"response_mime_type": "application/json"}
+            config=types.GenerateContentConfig(response_mime_type="application/json")
         )
         return json.loads(response.text)
     except Exception as e:
