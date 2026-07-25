@@ -5,8 +5,8 @@ import google as genai
 
 # Configure Gemini API key
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-if GEMINI_API_KEY:
-    genai.configure(api_key=GEMINI_API_KEY)
+model_id = "gemini-2.5-flash"
+client = genai.Client(api_key=GEMINI_API_KEY)
 
 JUDGE_PROMPT_TEMPLATE = """
 You are an expert compliance auditor and LLM Evaluator for Brazilian Regulatory Standards (NR-1).
