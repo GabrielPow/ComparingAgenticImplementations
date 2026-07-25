@@ -61,7 +61,8 @@ def evaluate_with_judge(item: dict, system_output_text: str) -> dict:
 
     try:
         response = client.models.generate_content(
-            formatted_prompt,
+            model=model_id,
+            prompt=formatted_prompt,
             config=types.GenerateContentConfig(response_mime_type="application/json")
         )
         return json.loads(response.text)
