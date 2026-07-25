@@ -1,0 +1,565 @@
+[
+  {
+    "id": "NR1-L1-001",
+    "level": 1,
+    "query_pt": "O que a NR-1 estabelece sobre a obrigatoriedade da implementação do PGR?",
+    "ground_truth": "A NR-1 estabelece que toda organização deve implementar o gerenciamento de riscos ocupacionais por meio de um Programa de Gerenciamento de Riscos (PGR), obrigatório por estabelecimento. O MEI está dispensado de elaborar o PGR, e microempresas e EPP de graus de risco 1 e 2 que não identifiquem exposições a agentes físicos, químicos e biológicos e que declarem informações digitais também ficam dispensadas.",
+    "key_points": [
+      "PGR é obrigatório para toda organização com empregados CLT",
+      "Deve ser implementado por estabelecimento, podendo ser por unidade operacional, setor ou atividade",
+      "MEI está dispensado da elaboração do PGR",
+      "ME e EPP graus de risco 1 e 2 podem ser dispensadas sob condições específicas"
+    ],
+    "references": ["NR-1.5.3.1", "NR-1.5.3.1.1", "NR-1.8.1", "NR-1.8.4"]
+  },
+  {
+    "id": "NR1-L1-002",
+    "level": 1,
+    "query_pt": "Quais são os documentos mínimos que o PGR deve conter segundo a NR-1?",
+    "ground_truth": "Segundo a NR-1, o PGR deve conter no mínimo dois documentos: o inventário de riscos ocupacionais e o plano de ação. Ambos devem ser elaborados sob a responsabilidade da organização, datados e assinados, e estar sempre disponíveis aos trabalhadores interessados, aos sindicatos e à Inspeção do Trabalho.",
+    "key_points": [
+      "Inventário de riscos ocupacionais",
+      "Plano de ação",
+      "Documentos devem ser datados e assinados",
+      "Devem estar disponíveis a trabalhadores, sindicatos e Inspeção do Trabalho"
+    ],
+    "references": ["NR-1.5.7.1", "NR-1.5.7.2", "NR-1.5.7.2.1"]
+  },
+  {
+    "id": "NR1-L1-003",
+    "level": 1,
+    "query_pt": "Segundo a NR-1, quais são as obrigações do trabalhador em relação às normas de segurança e saúde no trabalho?",
+    "ground_truth": "Segundo a NR-1, cabe ao trabalhador: cumprir as disposições legais e regulamentares sobre SST, inclusive as ordens de serviço expedidas pelo empregador; submeter-se aos exames médicos previstos nas NR; colaborar com a organização na aplicação das NR; e usar o equipamento de proteção individual fornecido pelo empregador. A recusa injustificada ao cumprimento dessas obrigações constitui ato faltoso.",
+    "key_points": [
+      "Cumprir disposições legais e ordens de serviço",
+      "Submeter-se a exames médicos previstos nas NR",
+      "Colaborar com a organização na aplicação das NR",
+      "Usar EPI fornecido pelo empregador",
+      "Recusa injustificada constitui ato faltoso"
+    ],
+    "references": ["NR-1.4.2", "NR-1.4.2.1"]
+  },
+  {
+    "id": "NR1-L1-004",
+    "level": 1,
+    "query_pt": "O que é o Gerenciamento de Riscos Ocupacionais (GRO) conforme definido no Anexo I da NR-1?",
+    "ground_truth": "O GRO é definido no Anexo I da NR-1 como um processo contínuo e sistemático de identificação de perigos, avaliação e controle dos riscos ocupacionais de uma organização, com a finalidade de proporcionar locais de trabalho seguros e saudáveis, prevenir lesões e agravos à saúde relacionados com o trabalho e melhorar o desempenho em Segurança e Saúde do Trabalho nas organizações.",
+    "key_points": [
+      "Processo contínuo e sistemático",
+      "Abrange identificação de perigos, avaliação e controle de riscos",
+      "Finalidade de proporcionar locais de trabalho seguros e saudáveis",
+      "Visa prevenir lesões e agravos à saúde",
+      "Busca melhorar o desempenho em SST"
+    ],
+    "references": ["NR-1 Anexo I"]
+  },
+  {
+    "id": "NR1-L1-005",
+    "level": 1,
+    "query_pt": "Quem é responsável por impor penalidades pelo descumprimento das normas de segurança e saúde no trabalho segundo a NR-1?",
+    "ground_truth": "Segundo a NR-1, cabe à autoridade regional competente em matéria de trabalho impor as penalidades cabíveis por descumprimento dos preceitos legais e regulamentares sobre segurança e saúde no trabalho. A nível nacional, a Secretaria de Trabalho (STRAB), por meio da Subsecretaria de Inspeção do Trabalho (SIT), é o órgão competente para supervisionar e fiscalizar as atividades de SST.",
+    "key_points": [
+      "Autoridade regional competente em matéria de trabalho impõe penalidades",
+      "STRAB/SIT é o órgão nacional competente em SST",
+      "SIT e órgãos regionais executam a fiscalização",
+      "Descumprimento acarreta penalidades previstas na legislação"
+    ],
+    "references": ["NR-1.3.1", "NR-1.3.2", "NR-1.3.3", "NR-1.9.1"]
+  },
+  {
+    "id": "NR1-L1-006",
+    "level": 1,
+    "query_pt": "O que a NR-1 determina sobre a hierarquia de medidas de prevenção que o empregador deve adotar?",
+    "ground_truth": "A NR-1 determina que o empregador deve implementar medidas de prevenção, ouvidos os trabalhadores, seguindo a seguinte ordem de prioridade: I) eliminação dos fatores de risco; II) minimização e controle com medidas de proteção coletiva; III) minimização e controle com medidas administrativas ou de organização do trabalho; IV) adoção de medidas de proteção individual.",
+    "key_points": [
+      "Eliminação dos fatores de risco é a prioridade máxima",
+      "Proteção coletiva tem prioridade sobre medidas administrativas",
+      "Medidas administrativas têm prioridade sobre proteção individual",
+      "EPI é a última opção na hierarquia",
+      "Trabalhadores devem ser ouvidos na implementação"
+    ],
+    "references": ["NR-1.4.1 alínea g"]
+  },
+  {
+    "id": "NR1-L1-007",
+    "level": 1,
+    "query_pt": "Quais informações mínimas devem constar no inventário de riscos ocupacionais segundo a NR-1?",
+    "ground_truth": "O inventário de riscos ocupacionais deve conter no mínimo: caracterização dos processos e ambientes de trabalho; caracterização das atividades; descrição dos perigos com identificação das fontes e/ou circunstâncias; indicação das possíveis lesões ou agravos à saúde; indicação dos grupos de trabalhadores expostos; descrição das medidas de prevenção implementadas; caracterização da exposição dos trabalhadores; dados de análise preliminar ou monitoramento de agentes físicos, químicos, biológicos e ergonômicos; e avaliação dos riscos incluindo classificação para elaboração do plano de ação.",
+    "key_points": [
+      "Caracterização dos processos, ambientes e atividades de trabalho",
+      "Descrição dos perigos com fontes e circunstâncias",
+      "Identificação de grupos de trabalhadores expostos",
+      "Descrição das medidas de prevenção implementadas",
+      "Avaliação e classificação dos riscos"
+    ],
+    "references": ["NR-1.5.7.3.2"]
+  },
+  {
+    "id": "NR1-L1-008",
+    "level": 1,
+    "query_pt": "Por quanto tempo o histórico de atualizações do inventário de riscos ocupacionais deve ser mantido segundo a NR-1?",
+    "ground_truth": "Segundo a NR-1, o histórico das atualizações do inventário de riscos ocupacionais deve ser mantido por um período mínimo de 20 (vinte) anos, ou pelo período estabelecido em normatização específica quando este for superior.",
+    "key_points": [
+      "Prazo mínimo de 20 anos para manutenção do histórico",
+      "Normatização específica pode estabelecer prazo superior",
+      "O inventário em si deve ser mantido atualizado"
+    ],
+    "references": ["NR-1.5.7.3.3", "NR-1.5.7.3.3.1"]
+  },
+  {
+    "id": "NR1-L1-009",
+    "level": 1,
+    "query_pt": "O que a NR-1 estabelece sobre o campo de aplicação das Normas Regulamentadoras?",
+    "ground_truth": "A NR-1 estabelece que as NR obrigam empregadores e empregados, urbanos e rurais. São de observância obrigatória pelas organizações e órgãos públicos da administração direta e indireta, bem como pelos Poderes Legislativo, Judiciário e Ministério Público que possuam empregados regidos pela CLT. A observância das NR não desobriga as organizações do cumprimento de outras disposições de códigos de obras ou regulamentos sanitários estaduais ou municipais, nem de convenções e acordos coletivos.",
+    "key_points": [
+      "Obriga empregadores e empregados urbanos e rurais",
+      "Aplica-se à administração pública direta e indireta",
+      "Abrange os Poderes Legislativo, Judiciário e Ministério Público com empregados CLT",
+      "Não desobriga do cumprimento de regulamentos estaduais, municipais ou acordos coletivos"
+    ],
+    "references": ["NR-1.2.1", "NR-1.2.1.1", "NR-1.2.1.2", "NR-1.2.2"]
+  },
+  {
+    "id": "NR1-L1-010",
+    "level": 1,
+    "query_pt": "Quais tipos de treinamento a NR-1 prevê no âmbito da capacitação em SST?",
+    "ground_truth": "A NR-1 prevê três tipos de treinamento: treinamento inicial, que deve ocorrer antes de o trabalhador iniciar suas funções ou conforme prazo especificado em NR; treinamento periódico, conforme periodicidade estabelecida nas NR ou determinado pelo empregador; e treinamento eventual, que ocorre quando há mudança nos procedimentos ou condições de trabalho com alteração de riscos, na ocorrência de acidente grave ou fatal, ou após retorno de afastamento superior a 180 dias.",
+    "key_points": [
+      "Treinamento inicial: antes do início das funções",
+      "Treinamento periódico: conforme periodicidade das NR",
+      "Treinamento eventual: em situações específicas como mudanças de risco ou acidente grave",
+      "Retorno após afastamento superior a 180 dias exige treinamento eventual",
+      "Tempo de treinamento é considerado trabalho efetivo"
+    ],
+    "references": ["NR-1.7.1.2", "NR-1.7.1.2.1", "NR-1.7.1.2.2", "NR-1.7.1.2.3", "NR-1.7.2"]
+  },
+
+  {
+    "id": "NR1-L2-001",
+    "level": 2,
+    "query_pt": "Um trabalhador identifica uma situação de risco grave e iminente em seu posto de trabalho. Quais são seus direitos e deveres segundo a NR-1?",
+    "ground_truth": "Segundo a NR-1, o trabalhador pode interromper suas atividades quando constatar, por motivos razoáveis, uma situação que envolva risco grave e iminente para sua vida ou saúde, devendo informar imediatamente ao seu superior hierárquico. Além disso, deve comunicar imediatamente ao superior as situações de risco grave e iminente para si ou para terceiros. O empregador não pode exigir o retorno à atividade enquanto não forem adotadas as medidas corretivas, e o trabalhador deve ser protegido de consequências injustificadas decorrentes dessa interrupção.",
+    "key_points": [
+      "Trabalhador pode interromper atividades em situação de risco grave e iminente",
+      "Deve informar imediatamente ao superior hierárquico",
+      "Empregador não pode exigir retorno sem adoção de medidas corretivas",
+      "Trabalhador é protegido de consequências injustificadas pela interrupção",
+      "Obrigação de comunicar riscos que afetem também terceiros"
+    ],
+    "references": ["NR-1.4.3", "NR-1.4.3.1", "NR-1.4.3.2", "NR-1.4.3.3"]
+  },
+  {
+    "id": "NR1-L2-002",
+    "level": 2,
+    "query_pt": "Com que frequência a avaliação de riscos ocupacionais deve ser revisada segundo a NR-1, e em quais situações ela deve ser antecipada?",
+    "ground_truth": "A NR-1 determina que a avaliação de riscos deve ser revista a cada dois anos. Para organizações com certificações em sistema de gestão de SST, o prazo pode ser de até 3 anos. A avaliação deve ser antecipada quando: houver implementação de medidas de prevenção (para avaliar riscos residuais); ocorrerem inovações ou modificações nos processos, tecnologias ou organização do trabalho que impliquem novos ou modificados riscos; forem identificadas inadequações ou ineficácia das medidas; ocorrerem acidentes ou doenças relacionadas ao trabalho; houver mudança nos requisitos legais aplicáveis; ou após solicitação justificada dos trabalhadores ou da CIPA.",
+    "key_points": [
+      "Revisão obrigatória a cada 2 anos",
+      "Organizações com certificação em gestão SST podem ter prazo de até 3 anos",
+      "Revisão antecipada após implementação de medidas de prevenção",
+      "Revisão após modificações que impliquem novos riscos",
+      "Revisão após acidentes ou doenças relacionadas ao trabalho",
+      "Trabalhadores ou CIPA podem solicitar revisão justificada"
+    ],
+    "references": ["NR-1.5.4.4.6", "NR-1.5.4.4.5.1"]
+  },
+  {
+    "id": "NR1-L2-003",
+    "level": 2,
+    "query_pt": "Uma empresa contrata trabalhadores de uma empresa terceirizada para atuar em suas dependências. Quais são as obrigações da empresa contratante em relação ao PGR segundo a NR-1?",
+    "ground_truth": "Segundo a NR-1, o PGR da organização contratante deve incluir as medidas de prevenção para as organizações contratadas que atuem em suas dependências, ou utilizar os programas das próprias contratadas. Se utilizar os programas das contratadas, estas devem fornecer o inventário de riscos e o plano de ação referente às atividades contratadas. A contratante também deve informar às contratadas os riscos ocupacionais sob sua responsabilidade que possam impactar as atividades delas. Quando os riscos resultarem da interação das atividades, as medidas devem ser definidas em conjunto sob coordenação da contratante.",
+    "key_points": [
+      "PGR da contratante deve incluir medidas de prevenção para contratadas em suas dependências",
+      "Pode alternativamente utilizar os programas das contratadas",
+      "Contratadas devem fornecer inventário de riscos e plano de ação",
+      "Contratante deve informar contratadas sobre seus riscos que possam impactá-las",
+      "Riscos da interação de atividades devem ser definidos em conjunto sob coordenação da contratante"
+    ],
+    "references": ["NR-1.5.8.1", "NR-1.5.8.1.1", "NR-1.5.8.2", "NR-1.5.8.4"]
+  },
+  {
+    "id": "NR1-L2-004",
+    "level": 2,
+    "query_pt": "Quais são os requisitos mínimos que um certificado de treinamento em SST deve conter segundo a NR-1?",
+    "ground_truth": "Segundo a NR-1, o certificado emitido ao término dos treinamentos (inicial, periódico ou eventual) deve conter: nome e assinatura do trabalhador; conteúdo programático; carga horária; data e local de realização do treinamento; nome e qualificação dos instrutores; e assinatura do responsável técnico do treinamento. O certificado deve ser disponibilizado ao trabalhador, com uma cópia arquivada na organização, e a capacitação deve ser consignada nos documentos funcionais do empregado.",
+    "key_points": [
+      "Nome e assinatura do trabalhador",
+      "Conteúdo programático e carga horária",
+      "Data e local de realização",
+      "Nome e qualificação dos instrutores",
+      "Assinatura do responsável técnico",
+      "Cópia arquivada na organização e registro nos documentos funcionais"
+    ],
+    "references": ["NR-1.7.1.1", "NR-1.7.3", "NR-1.7.4"]
+  },
+  {
+    "id": "NR1-L2-005",
+    "level": 2,
+    "query_pt": "Como a NR-1 define a determinação do nível de risco ocupacional e quais fatores devem ser considerados?",
+    "ground_truth": "Segundo a NR-1, o nível de risco ocupacional é determinado pela combinação da severidade das possíveis lesões ou agravos à saúde com a probabilidade de sua ocorrência. A severidade deve ser estabelecida em razão da magnitude das possíveis consequências, selecionando-se a consequência de maior magnitude quando existir mais de uma possível. A probabilidade deve ser estabelecida com base na chance de ocorrência das lesões ou agravos, levando em consideração o cumprimento dos requisitos legais e a eficácia das medidas de prevenção implementadas. A organização deve selecionar as ferramentas e técnicas adequadas ao risco ou circunstância em avaliação.",
+    "key_points": [
+      "Nível de risco = combinação de severidade e probabilidade",
+      "Severidade baseada na magnitude das possíveis consequências",
+      "Seleciona-se a consequência de maior magnitude quando há múltiplas possibilidades",
+      "Probabilidade considera cumprimento de requisitos legais e eficácia das medidas",
+      "Organização escolhe as ferramentas e técnicas adequadas"
+    ],
+    "references": ["NR-1.5.4.4.2", "NR-1.5.4.4.2.1", "NR-1.5.4.4.4", "NR-1.5.4.4.4.1", "NR-1.5.4.4.5", "NR-1.5.4.4.5.1"]
+  },
+  {
+    "id": "NR1-L2-006",
+    "level": 2,
+    "query_pt": "Uma organização deseja digitalizar seus documentos físicos de SST assinados manualmente. Quais são os requisitos da NR-1 para que essa digitalização seja válida?",
+    "ground_truth": "Segundo a NR-1, os documentos físicos assinados manualmente podem ser arquivados em meio digital mediante processo de digitalização que mantenha a integridade, a autenticidade e, se necessário, a confidencialidade do documento digital, com emprego de certificado digital emitido no âmbito da ICP-Brasil. O empregador que optar por essa modalidade deve manter os originais conforme previsão em lei. Além disso, o empregador deve garantir a preservação dos documentos por meio de procedimentos e tecnologias que permitam verificar, a qualquer tempo, sua validade jurídica, garantindo autenticidade, integridade, disponibilidade, rastreabilidade, irretratabilidade, privacidade e interoperabilidade.",
+    "key_points": [
+      "Digitalização deve manter integridade e autenticidade do documento",
+      "Deve utilizar certificado digital ICP-Brasil",
+      "Originais físicos devem ser mantidos conforme previsão legal",
+      "Deve garantir validade jurídica verificável a qualquer tempo",
+      "Deve assegurar rastreabilidade, irretratabilidade e interoperabilidade"
+    ],
+    "references": ["NR-1.6.2", "NR-1.6.3", "NR-1.6.3.1", "NR-1.6.3.2", "NR-1.6.4"]
+  },
+  {
+    "id": "NR1-L2-007",
+    "level": 2,
+    "query_pt": "Quais são as condições para que uma microempresa (ME) de grau de risco 2 seja dispensada de elaborar o PGR?",
+    "ground_truth": "Para que uma ME de grau de risco 2 seja dispensada de elaborar o PGR, devem ser atendidas cumulativamente as seguintes condições: no levantamento preliminar de perigos, não devem ser identificadas exposições ocupacionais a agentes físicos, químicos e biológicos, em conformidade com a NR-9; e a empresa deve declarar as informações digitais de segurança e saúde no trabalho na forma prevista no subitem 1.6.1 da NR-1. Mesmo dispensada do PGR, a ME permanece obrigada a cumprir todas as demais disposições previstas nas NR, e as informações digitais declaradas devem ser divulgadas junto aos trabalhadores.",
+    "key_points": [
+      "Ausência de exposições a agentes físicos, químicos e biológicos no levantamento preliminar",
+      "Declaração das informações digitais de SST conforme item 1.6.1",
+      "Dispensa aplica-se apenas ao PGR, demais obrigações das NR permanecem",
+      "Informações digitais devem ser divulgadas aos trabalhadores",
+      "Graus de risco 1 e 2 são os previstos na NR-4"
+    ],
+    "references": ["NR-1.8.4", "NR-1.8.4.1", "NR-1.8.5"]
+  },
+  {
+    "id": "NR1-L2-008",
+    "level": 2,
+    "query_pt": "Segundo a NR-1, quais são os requisitos para que um treinamento de SST realizado em uma empresa anterior possa ser aproveitado em uma nova organização?",
+    "ground_truth": "Segundo a NR-1, os treinamentos realizados em organização anterior podem ser avaliados e convalidados ou complementados pela nova organização, desde que sejam considerados: as atividades desenvolvidas pelo trabalhador na organização anterior; as atividades que desempenhará na nova organização; o conteúdo e carga horária cumpridos; o conteúdo e carga horária exigidos; e que o último treinamento tenha sido realizado em período inferior ao estabelecido na NR, ou há menos de 2 anos nos casos sem prazo estabelecido. A organização permanece responsável por emitir a certificação, mencionando as datas dos treinamentos convalidados, e para fins de periodicidade considera-se a data do treinamento mais antigo convalidado.",
+    "key_points": [
+      "Organização avalia e decide sobre convalidação ou complementação",
+      "Conteúdo e carga horária do treinamento anterior devem cobrir os exigidos",
+      "Treinamento deve ter sido realizado dentro da validade ou há menos de 2 anos",
+      "Nova organização deve emitir certificação mencionando treinamentos convalidados",
+      "Periodicidade conta a partir da data do treinamento mais antigo convalidado"
+    ],
+    "references": ["NR-1.7.7", "NR-1.7.7.1", "NR-1.7.8", "NR-1.7.8.1"]
+  },
+  {
+    "id": "NR1-L2-009",
+    "level": 2,
+    "query_pt": "O que a NR-1 exige das organizações em relação à prevenção de assédio sexual e violência no trabalho?",
+    "ground_truth": "Segundo a NR-1, as organizações obrigadas a constituir CIPA (nos termos da NR-5) devem adotar as seguintes medidas: incluir regras de conduta sobre assédio sexual e outras formas de violência nas normas internas, com ampla divulgação aos empregados; fixar procedimentos para recebimento e acompanhamento de denúncias, apuração dos fatos e aplicação de sanções, garantindo o anonimato do denunciante; e realizar, no mínimo a cada 12 meses, ações de capacitação, orientação e sensibilização de todos os níveis hierárquicos sobre violência, assédio, igualdade e diversidade, em formatos acessíveis e com máxima efetividade.",
+    "key_points": [
+      "Aplica-se apenas às organizações obrigadas a constituir CIPA",
+      "Inclusão de regras de conduta nas normas internas com ampla divulgação",
+      "Procedimentos para denúncias com garantia de anonimato do denunciante",
+      "Capacitação de todos os níveis hierárquicos a cada 12 meses no mínimo",
+      "Formatos acessíveis e com máxima efetividade"
+    ],
+    "references": ["NR-1.4.1.1"]
+  },
+  {
+    "id": "NR1-L2-010",
+    "level": 2,
+    "query_pt": "Quais são as situações que obrigam a realização de um treinamento eventual em SST segundo a NR-1?",
+    "ground_truth": "Segundo a NR-1, o treinamento eventual deve ocorrer em três situações: quando houver mudança nos procedimentos, condições ou operações de trabalho que impliquem em alteração dos riscos ocupacionais; na ocorrência de acidente grave ou fatal que indique a necessidade de novo treinamento; ou após retorno de afastamento ao trabalho por período superior a 180 dias. A carga horária, prazo de realização e conteúdo programático do treinamento eventual devem atender à situação que o motivou.",
+    "key_points": [
+      "Mudanças que impliquem alteração dos riscos ocupacionais",
+      "Ocorrência de acidente grave ou fatal",
+      "Retorno após afastamento superior a 180 dias",
+      "Carga horária e conteúdo devem ser adequados à situação motivadora"
+    ],
+    "references": ["NR-1.7.1.2.3", "NR-1.7.1.2.3.1"]
+  },
+
+  {
+    "id": "NR1-L3-001",
+    "level": 3,
+    "query_pt": "Uma empresa de médio porte realizou uma grande reforma em sua linha de produção introduzindo novos equipamentos automatizados. O PGR foi elaborado há 18 meses. A empresa precisa revisar o PGR agora ou pode aguardar o prazo de 2 anos?",
+    "ground_truth": "A empresa deve revisar o PGR imediatamente, sem aguardar o prazo de 2 anos. A NR-1 determina que a avaliação de riscos deve ser revista, além do prazo bienal regular, quando da ocorrência de inovações e modificações nas tecnologias, ambientes, processos, condições, procedimentos e organização do trabalho que impliquem em novos riscos ou modifiquem os riscos existentes. A introdução de novos equipamentos automatizados em uma linha de produção claramente se enquadra nessa situação, pois altera o perfil de riscos do estabelecimento, exigindo nova identificação de perigos e avaliação de riscos para os novos processos, com atualização do inventário de riscos e do plano de ação.",
+    "key_points": [
+      "Revisão imediata é obrigatória, não pode aguardar o prazo bienal",
+      "Modificações em tecnologias e processos que impliquem novos riscos exigem revisão antecipada",
+      "Inventário de riscos e plano de ação devem ser atualizados",
+      "Levantamento preliminar de perigos deve ser realizado para as novas instalações",
+      "O prazo de 2 anos é o máximo entre revisões regulares, não uma proteção contra revisões antecipadas"
+    ],
+    "references": ["NR-1.5.4.4.6", "NR-1.5.4.2.1", "NR-1.5.7.3.3"]
+  },
+  {
+    "id": "NR1-L3-002",
+    "level": 3,
+    "query_pt": "Nossa empresa armazena dados em nuvem sem criptografia em trânsito. Isso viola a NR-1 e quais são os impactos no PGR?",
+    "ground_truth": "A NR-1 exige que o empregador garanta a preservação de documentos nato digitais ou digitalizados por meio de procedimentos e tecnologias que assegurem autenticidade, integridade, disponibilidade, rastreabilidade, irretratabilidade, privacidade e interoperabilidade. O armazenamento sem criptografia em trânsito compromete diretamente a privacidade e integridade dos documentos de SST, configurando não conformidade com o item 1.6.4 da NR-1. No contexto do PGR, esse risco tecnológico/operacional deve ser identificado como perigo no inventário de riscos, classificado quanto ao seu nível de risco, e incluído no plano de ação com medidas corretivas como a implementação de criptografia TLS/HTTPS e prazo definido para correção.",
+    "key_points": [
+      "Violação do item 1.6.4: ausência de garantias de privacidade e integridade dos documentos digitais",
+      "Risco deve ser identificado no inventário de riscos do PGR",
+      "Plano de ação deve incluir medida corretiva com responsável e cronograma",
+      "Criptografia em trânsito é necessária para conformidade com requisitos de privacidade e integridade",
+      "Inspeção do Trabalho deve ter acesso amplo e irrestrito aos documentos (item 1.6.5)"
+    ],
+    "references": ["NR-1.6.4", "NR-1.6.5", "NR-1.5.5.2.1", "NR-1.5.7.1"]
+  },
+  {
+    "id": "NR1-L3-003",
+    "level": 3,
+    "query_pt": "Uma empresa contratou um MEI para realizar serviços de manutenção elétrica em suas dependências. Quais são as obrigações da empresa contratante em relação ao PGR segundo a NR-1?",
+    "ground_truth": "Segundo a NR-1, quando a organização contratada são prestadores de serviço que atuam somente pelo titular ou sócios (como o MEI), a organização contratante deve estender suas medidas de prevenção aos riscos das atividades objeto da contratação, quando o MEI atuar em suas dependências. Além disso, o MEI está dispensado de elaborar o PGR, mas essa dispensa não alcança a organização contratante, que deverá incluí-lo em suas ações de prevenção e em seu PGR. A contratante também deve informar ao MEI os riscos ocupacionais sob sua responsabilidade que possam impactar as atividades do MEI em suas dependências.",
+    "key_points": [
+      "Contratante deve estender suas medidas de prevenção ao MEI quando este atua em suas dependências",
+      "MEI é dispensado de PGR, mas contratante não",
+      "Contratante deve incluir o MEI em seu PGR e ações de prevenção",
+      "Contratante deve informar o MEI sobre seus riscos ocupacionais relevantes",
+      "Responsabilidade de proteção do MEI é da contratante quando nas suas dependências"
+    ],
+    "references": ["NR-1.5.8.1.2", "NR-1.8.1", "NR-1.8.1.1", "NR-1.5.8.2"]
+  },
+  {
+    "id": "NR1-L3-004",
+    "level": 3,
+    "query_pt": "Uma empresa deseja realizar o treinamento de NR em modalidade EAD. O treinamento inclui uma parte prática de operação de máquinas. A parte prática pode ser feita à distância?",
+    "ground_truth": "Segundo a NR-1 e seu Anexo II, os treinamentos podem ser ministrados em modalidade EAD ou semipresencial desde que atendidos os requisitos do Anexo II. Quanto ao conteúdo prático, a NR-1 estabelece que este pode ser realizado na modalidade de ensino a distância ou semipresencial somente se previsto em NR específica. Portanto, a parte prática de operação de máquinas somente poderá ser realizada à distância se a NR específica que regula esse treinamento (no caso de máquinas, a NR-12) expressamente permitir. Na ausência de tal previsão na NR específica, a parte prática deve ser presencial, configurando um treinamento semipresencial.",
+    "key_points": [
+      "Treinamentos EAD são permitidos pela NR-1 se atenderem ao Anexo II",
+      "Conteúdo prático em EAD só é permitido se previsto em NR específica",
+      "Para operação de máquinas, verificar permissão na NR-12",
+      "Sem previsão na NR específica, parte prática deve ser presencial",
+      "O treinamento nesse caso seria semipresencial, não integralmente EAD"
+    ],
+    "references": ["NR-1.7.9", "NR-1.7.9.1", "NR-1 Anexo II"]
+  },
+  {
+    "id": "NR1-L3-005",
+    "level": 3,
+    "query_pt": "Duas empresas distintas realizam simultaneamente atividades em um mesmo canteiro de obras. Como a NR-1 regula a responsabilidade pelo gerenciamento de riscos nessa situação?",
+    "ground_truth": "A NR-1 estabelece que sempre que várias organizações realizem simultaneamente atividades no mesmo local de trabalho, devem executar ações integradas para aplicar as medidas de prevenção, visando à proteção de todos os trabalhadores expostos. No caso específico de riscos que resultem da interação das atividades das organizações, as medidas de prevenção devem ser definidas em conjunto, sob coordenação da organização contratante. Cada organização contratada deve informar à contratante os riscos sob sua responsabilidade que possam impactar as atividades da contratante, e vice-versa. O PGR da contratante deve incluir as medidas de prevenção para as contratadas ou utilizar os programas destas.",
+    "key_points": [
+      "Ações integradas são obrigatórias quando há atividades simultâneas no mesmo local",
+      "Riscos da interação das atividades devem ser definidos em conjunto",
+      "Organização contratante coordena as medidas de prevenção conjuntas",
+      "Obrigação mútua de informar riscos que possam impactar a outra parte",
+      "PGR da contratante deve contemplar as medidas para as contratadas"
+    ],
+    "references": ["NR-1.5.3.5", "NR-1.5.8.1", "NR-1.5.8.2", "NR-1.5.8.3", "NR-1.5.8.4"]
+  },
+  {
+    "id": "NR1-L3-006",
+    "level": 3,
+    "query_pt": "Uma empresa identificou um perigo em seu levantamento preliminar que não pode ser eliminado nem controlado imediatamente. O que a NR-1 exige nessa situação específica?",
+    "ground_truth": "Segundo a NR-1, quando na fase de levantamento preliminar de perigos e riscos não for possível adotar medidas imediatas para reduzir ou controlar o risco ocupacional evidente, as medidas devem ser inseridas no plano de ação e o risco deve ser registrado no inventário de riscos. Adicionalmente, como o perigo não pode ser evitado ou eliminado, a organização deve implementar o processo completo de identificação de perigos e avaliação de riscos ocupacionais, conforme os subitens 1.5.4.3 e 1.5.4.4 da NR-1. O plano de ação deve indicar responsáveis, formas de acompanhamento e cronograma para implementação das medidas.",
+    "key_points": [
+      "Risco deve ser registrado no inventário de riscos imediatamente",
+      "Medidas de controle devem ser inseridas no plano de ação com cronograma e responsáveis",
+      "Organização deve prosseguir para o processo completo de identificação e avaliação de riscos",
+      "Plano de ação deve definir formas de acompanhamento e aferição de resultados",
+      "Situação não desobriga a organização de buscar controle o mais breve possível"
+    ],
+    "references": ["NR-1.5.4.2.1.2", "NR-1.5.4.2.1.3", "NR-1.5.5.2.1", "NR-1.5.5.2.2"]
+  },
+  {
+    "id": "NR1-L3-007",
+    "level": 3,
+    "query_pt": "Um trabalhador retornou de licença médica após 6 meses de afastamento. A empresa precisa realizar novo treinamento em SST? Quais as implicações para o PGR?",
+    "ground_truth": "Sim, a NR-1 exige treinamento eventual para trabalhadores que retornem de afastamento ao trabalho por período superior a 180 dias. Como o trabalhador ficou afastado por 6 meses (aproximadamente 180 dias), é necessário verificar se o período supera exatamente 180 dias para confirmar a obrigatoriedade. Se superado, deve ser realizado treinamento eventual com carga horária, prazo e conteúdo programático adequados à situação que o motivou. Do ponto de vista do PGR, se durante o período de afastamento houve mudanças nos processos, condições de trabalho ou riscos do posto do trabalhador, o treinamento deve contemplar essas atualizações, e o trabalhador deve receber informações sobre os riscos existentes e as medidas de prevenção adotadas.",
+    "key_points": [
+      "Treinamento eventual obrigatório para afastamento superior a 180 dias",
+      "Verificar se o período supera exatamente 180 dias",
+      "Carga horária e conteúdo devem ser adequados à situação",
+      "Trabalhador deve ser informado sobre riscos e medidas de prevenção atuais",
+      "Se houve mudanças durante o afastamento, o treinamento deve cobri-las"
+    ],
+    "references": ["NR-1.7.1.2.3", "NR-1.4.4", "NR-1.7.1.2.3.1"]
+  },
+  {
+    "id": "NR1-L3-008",
+    "level": 3,
+    "query_pt": "Uma empresa possui certificação ISO 45001 em sistema de gestão de SST. Isso altera alguma obrigação específica prevista na NR-1?",
+    "ground_truth": "Sim, a NR-1 prevê tratamento diferenciado para organizações com certificações em sistema de gestão de SST em dois aspectos: o prazo de revisão da avaliação de riscos pode ser de até 3 anos (em vez dos 2 anos padrão); e o gerenciamento de riscos ocupacionais pode ser atendido por sistemas de gestão, desde que estes cumpram as exigências previstas na NR-1 e em dispositivos legais de SST. No entanto, a certificação não dispensa a organização de nenhuma outra obrigação prevista na NR-1, incluindo a elaboração do PGR (com inventário de riscos e plano de ação), os requisitos de documentação, capacitação e participação dos trabalhadores.",
+    "key_points": [
+      "Prazo de revisão da avaliação de riscos ampliado para até 3 anos",
+      "Sistema de gestão certificado pode atender ao GRO se cumprir os requisitos da NR-1",
+      "Certificação não dispensa as demais obrigações da NR-1",
+      "PGR com inventário de riscos e plano de ação continuam obrigatórios",
+      "Requisitos de capacitação e participação dos trabalhadores permanecem"
+    ],
+    "references": ["NR-1.5.3.1.2", "NR-1.5.4.4.6", "NR-1.5.4.4.5.1"]
+  },
+  {
+    "id": "NR1-L3-009",
+    "level": 3,
+    "query_pt": "Uma empresa adotou proteção coletiva para controle de determinado risco, mas ela é insuficiente. Como a NR-1 orienta a adoção de medidas complementares nesse caso?",
+    "ground_truth": "A NR-1 estabelece que quando a proteção coletiva for comprovadamente insuficiente, devem ser adotadas medidas complementares seguindo uma hierarquia específica: primeiro, medidas de caráter administrativo ou de organização do trabalho; e, em seguida, a utilização de equipamento de proteção individual (EPI). O EPI pode ser adotado também em caráter complementar ou emergencial. A implantação de medidas de prevenção complementares deve ser acompanhada de informação aos trabalhadores quanto aos procedimentos a serem adotados e às limitações das medidas de prevenção. As medidas de prevenção devem ser corrigidas quando os dados de acompanhamento indicarem ineficácia.",
+    "key_points": [
+      "Proteção coletiva insuficiente deve ser complementada por medidas administrativas primeiro",
+      "EPI é adotado após medidas administrativas ou em caráter emergencial/complementar",
+      "Trabalhadores devem ser informados sobre procedimentos e limitações das medidas",
+      "Desempenho das medidas deve ser acompanhado e corrigido se ineficaz",
+      "Impossibilidade técnica de proteção coletiva deve ser comprovada pela organização"
+    ],
+    "references": ["NR-1.5.5.1.2", "NR-1.5.5.1.3", "NR-1.5.5.3.2.1"]
+  },
+  {
+    "id": "NR1-L3-010",
+    "level": 3,
+    "query_pt": "Após um acidente de trabalho grave (sem fatalidade), quais são as obrigações imediatas e de médio prazo que a NR-1 impõe à organização?",
+    "ground_truth": "A NR-1 impõe as seguintes obrigações após um acidente grave: imediatamente, o empregador deve determinar e comunicar os procedimentos a serem adotados em caso de acidente, incluindo análise de causas. No médio prazo, a organização deve analisar o acidente, documentando a análise com consideração das situações geradoras, atividades efetivamente desenvolvidas, ambiente, materiais, processo produtivo e organização do trabalho, além de dados epidemiológicos e informações dos trabalhadores. A análise deve fornecer evidências para revisar e aprimorar as medidas de prevenção. Também é obrigatória a revisão antecipada da avaliação de riscos (antes do prazo bienal) e, se o acidente indicar necessidade, a realização de treinamento eventual.",
+    "key_points": [
+      "Análise do acidente é obrigatória e deve ser documentada",
+      "Análise deve considerar atividades reais, ambiente, materiais e organização do trabalho",
+      "Deve incluir dados epidemiológicos e informações dos trabalhadores",
+      "Resultados devem subsidiar revisão e aprimoramento das medidas de prevenção",
+      "Avaliação de riscos deve ser revisada antecipadamente",
+      "Treinamento eventual pode ser necessário se o acidente indicar essa necessidade"
+    ],
+    "references": ["NR-1.4.1 alínea e", "NR-1.5.5.5.1", "NR-1.5.5.5.2", "NR-1.5.4.4.6", "NR-1.7.1.2.3"]
+  },
+
+  {
+    "id": "NR1-L4-001",
+    "level": 4,
+    "query_pt": "Uma empresa possui um sistema de gestão integrado (ISO 45001) e alega que ele substitui integralmente o PGR exigido pela NR-1, dispensando a elaboração de inventário de riscos e plano de ação separados. Essa interpretação está correta?",
+    "ground_truth": "Essa interpretação está incorreta. A NR-1 permite que o gerenciamento de riscos ocupacionais seja atendido por sistemas de gestão, mas somente desde que estes cumpram as exigências previstas na própria NR-1 e em dispositivos legais de SST. A NR-1 é explícita ao exigir que o PGR contemple ou esteja integrado com planos, programas e outros documentos previstos na legislação, e que contenha no mínimo o inventário de riscos ocupacionais e o plano de ação. Portanto, a ISO 45001 pode estruturar o GRO e ampliar o prazo de revisão para 3 anos, mas não dispensa a existência dos documentos mínimos do PGR. A empresa deve demonstrar que seu sistema de gestão produz e mantém esses documentos em conformidade com os requisitos específicos da NR-1.",
+    "key_points": [
+      "Sistema de gestão pode atender ao GRO mas deve cumprir os requisitos da NR-1",
+      "Inventário de riscos e plano de ação são obrigatórios independentemente da certificação",
+      "PGR deve contemplar ou estar integrado com outros programas legais",
+      "ISO 45001 não substitui os requisitos documentais mínimos da NR-1",
+      "Benefício da certificação é o prazo ampliado de revisão (3 anos) e a flexibilidade na estrutura do GRO"
+    ],
+    "references": ["NR-1.5.3.1.2", "NR-1.5.3.1.3", "NR-1.5.7.1", "NR-1.5.7.2"]
+  },
+  {
+    "id": "NR1-L4-002",
+    "level": 4,
+    "query_pt": "Um trabalhador interrompeu suas atividades alegando risco grave e iminente. O empregador discorda da avaliação do trabalhador e determina o retorno imediato. Considerando a NR-1, quem tem razão e quais são as consequências jurídicas para cada parte?",
+    "ground_truth": "Segundo a NR-1, o trabalhador tem o direito de interromper atividades quando constatar, por motivos razoáveis, situação de risco grave e iminente para sua vida ou saúde. O empregador não pode exigir o retorno enquanto não adotar medidas corretivas da situação. Se o empregador determinar o retorno imediato sem adotar medidas corretivas, estará em descumprimento da NR-1, sujeito a penalidades da Inspeção do Trabalho. O trabalhador, por sua vez, deve ser protegido de consequências injustificadas decorrentes da interrupção. A chave legal é o critério de 'motivos razoáveis': o trabalhador não precisa ter certeza técnica do risco, apenas fundamentação razoável. A divergência entre as avaliações deve ser resolvida com a adoção de medidas corretivas ou com a demonstração objetiva pelo empregador de que não há risco, não com a coerção ao retorno.",
+    "key_points": [
+      "Trabalhador não precisa de certeza técnica, apenas motivos razoáveis",
+      "Empregador não pode exigir retorno sem medidas corretivas: violação da NR-1",
+      "Trabalhador deve ser protegido de consequências injustificadas pela interrupção",
+      "Divergência deve ser resolvida com evidências objetivas, não coerção",
+      "Empregador sujeito a penalidades da Inspeção do Trabalho pelo descumprimento",
+      "Trabalhador que recusa retorno justificado pode ser protegido contra demissão por justa causa"
+    ],
+    "references": ["NR-1.4.3", "NR-1.4.3.1", "NR-1.4.3.2", "NR-1.9.1"]
+  },
+  {
+    "id": "NR1-L4-003",
+    "level": 4,
+    "query_pt": "Uma empresa pretende usar um sistema de IA para realizar automaticamente a identificação de perigos e avaliação de riscos do PGR, sem revisão humana dos resultados. Isso é permitido pela NR-1? Quais são os limites?",
+    "ground_truth": "A NR-1 não proíbe explicitamente o uso de sistemas automatizados ou IA na identificação de perigos e avaliação de riscos, mas impõe requisitos que limitam a automação total sem supervisão humana. Os documentos do PGR devem ser elaborados sob a responsabilidade da organização, datados e assinados, o que implica responsabilidade humana identificável. A organização deve adotar mecanismos para a participação de trabalhadores no processo de GRO e consulta à sua percepção de riscos, o que exige interação humana. A avaliação de riscos exige que a organização selecione as ferramentas e técnicas adequadas ao risco ou circunstância, documente os critérios de gradação e tome decisões sobre classificação. A ausência de revisão humana violaria a responsabilidade documental e os requisitos de participação dos trabalhadores, além de comprometer a rastreabilidade exigida para documentos digitais.",
+    "key_points": [
+      "NR-1 exige responsabilidade organizacional identificável (assinatura e datação dos documentos)",
+      "Participação dos trabalhadores no GRO é obrigatória e exige interação humana",
+      "Organização deve documentar os critérios de avaliação e tomar decisões sobre classificação de riscos",
+      "IA pode ser uma ferramenta de suporte, mas não substitui a responsabilidade humana",
+      "Rastreabilidade e irretratabilidade dos documentos digitais também seriam comprometidas"
+    ],
+    "references": ["NR-1.5.3.3", "NR-1.5.4.4.2.1", "NR-1.5.4.4.2.2", "NR-1.5.7.2"]
+  },
+  {
+    "id": "NR1-L4-004",
+    "level": 4,
+    "query_pt": "Uma empresa foi autuada pela Inspeção do Trabalho por inadequação em seu PGR. A empresa recorreu administrativamente e, enquanto aguarda o julgamento, alega que não precisa corrigir as inadequações até a decisão final do recurso. Essa posição está correta segundo a NR-1?",
+    "ground_truth": "Essa posição está incorreta. A NR-1 determina que as medidas de prevenção devem ser corrigidas quando os dados obtidos no acompanhamento indicarem ineficácia em seu desempenho. A interposição de recurso administrativo não suspende automaticamente a obrigação de cumprimento das NR. Além disso, a NR-1 estabelece que o empregador deve implementar medidas de prevenção de acordo com a hierarquia de controles, e a autoridade regional impõe penalidades cujo recurso segue os trâmites legais sem suspender as obrigações de SST. A STRAB/SIT, em última instância, conhece os recursos, mas isso não desobriga a empresa de manter o PGR em conformidade. Manter inadequações conhecidas durante o recurso expõe os trabalhadores a riscos e pode agravar a situação jurídica da empresa.",
+    "key_points": [
+      "Recurso administrativo não suspende obrigação de conformidade com as NR",
+      "Medidas de prevenção ineficazes devem ser corrigidas independentemente de recursos",
+      "Manter inadequações conhecidas expõe trabalhadores a riscos e agrava situação jurídica",
+      "STRAB/SIT conhece recursos em última instância, mas não isenta o cumprimento imediato",
+      "Empregador tem dever contínuo de cumprir e fazer cumprir as disposições de SST"
+    ],
+    "references": ["NR-1.3.1", "NR-1.3.3", "NR-1.4.1", "NR-1.5.5.3.2.1", "NR-1.9.1"]
+  },
+  {
+    "id": "NR1-L4-005",
+    "level": 4,
+    "query_pt": "Uma organização pública municipal (câmara de vereadores) que possui servidores contratados pela CLT questiona se está obrigada a cumprir a NR-1 e elaborar o PGR. Qual é a resposta correta e seus fundamentos?",
+    "ground_truth": "Sim, a câmara de vereadores está obrigada a cumprir a NR-1 e elaborar o PGR para seus empregados CLT. A NR-1 é explícita ao determinar que as NR são de observância obrigatória não apenas pelas organizações privadas, mas também pelos órgãos públicos da administração direta e indireta e pelos órgãos dos Poderes Legislativo, Judiciário e Ministério Público, quando possuam empregados regidos pela CLT. A câmara de vereadores integra o Poder Legislativo municipal, e seus servidores contratados pela CLT estão integralmente sujeitos às NR. A observância das NR também não desobriga a câmara do cumprimento de eventuais disposições estaduais ou municipais mais restritivas sobre SST.",
+    "key_points": [
+      "Órgãos do Poder Legislativo com empregados CLT estão obrigados às NR",
+      "A câmara de vereadores integra o Poder Legislativo municipal",
+      "Obrigatoriedade vale para empregados regidos pela CLT, não para estatutários",
+      "Administração pública direta e indireta também está obrigada",
+      "Cumprimento das NR não exclui obrigações estaduais ou municipais mais restritivas"
+    ],
+    "references": ["NR-1.2.1", "NR-1.2.1.1", "NR-1.2.2"]
+  },
+  {
+    "id": "NR1-L4-006",
+    "level": 4,
+    "query_pt": "Uma empresa realizou um treinamento de SST há 1 ano e 8 meses. Um trabalhador muda de função para um cargo com perfil de risco diferente. A empresa pode aproveitar o treinamento anterior ou precisa realizar novo treinamento? Como isso interage com as regras de treinamento eventual e de aproveitamento de treinamentos?",
+    "ground_truth": "A mudança de função com alteração do perfil de risco gera duas obrigações concorrentes na NR-1: a obrigação de treinamento eventual (pois houve mudança nas condições de trabalho que implica alteração de riscos) e a obrigação de informar o trabalhador sobre os novos riscos, meios de prevenção, medidas adotadas e procedimentos de emergência. O aproveitamento de conteúdos do treinamento anterior é possível apenas para os conteúdos que estejam compreendidos no treinamento anterior, desde que o conteúdo tenha sido ministrado há menos de 2 anos (o que é atendido, pois foi há 1 ano e 8 meses) e seja validado pelo responsável técnico. Na prática, a empresa deve realizar um treinamento eventual focado especificamente nos novos riscos e procedimentos do novo cargo, podendo aproveitar e convalidar conteúdos comuns já abordados no treinamento anterior, desde que documentado e validado.",
+    "key_points": [
+      "Mudança de função com alteração de riscos exige treinamento eventual",
+      "Trabalhador deve ser informado sobre riscos e procedimentos do novo cargo",
+      "Aproveitamento de conteúdos anteriores é possível se compreendidos no treinamento anterior e realizados há menos de 2 anos",
+      "Responsável técnico deve validar o aproveitamento",
+      "Treinamento eventual deve focar nos novos riscos e conteúdos não cobertos anteriormente",
+      "Certificado deve mencionar conteúdos e datas dos treinamentos aproveitados"
+    ],
+    "references": ["NR-1.4.4", "NR-1.7.1.2.3", "NR-1.7.6", "NR-1.7.6.1", "NR-1.7.1.2.3.1"]
+  },
+  {
+    "id": "NR1-L4-007",
+    "level": 4,
+    "query_pt": "A NR-1 passou por atualização significativa em maio de 2026, incluindo riscos psicossociais no PGR. Uma empresa com PGR elaborado em 2024 alega que só precisará incluir os riscos psicossociais na próxima revisão bienal (em 2026). Essa interpretação é correta?",
+    "ground_truth": "A interpretação é parcialmente incorreta. A NR-1 determina que a avaliação de riscos deve ser revista quando houver mudança nos requisitos legais aplicáveis, o que configura uma situação de revisão antecipada obrigatória. A atualização da NR-1 em 2026 incluindo formalmente os fatores de risco psicossociais como parte obrigatória do PGR representa uma mudança nos requisitos legais, exigindo que as empresas revisem seu PGR para incluir esses riscos independentemente do prazo bienal. Adicionalmente, a NR-1 já previa desde 2022 que o gerenciamento de riscos deve abranger os fatores ergonômicos incluindo os fatores de risco psicossociais relacionados ao trabalho, e que a organização deve considerar as condições de trabalho incluindo esses fatores. Portanto, a empresa não pode aguardar a revisão bienal.",
+    "key_points": [
+      "Mudança nos requisitos legais exige revisão antecipada da avaliação de riscos",
+      "Atualização normativa é uma das situações que obriga revisão antes do prazo bienal",
+      "Riscos psicossociais já estavam previstos na NR-1 desde 2022 como parte do GRO",
+      "A nova portaria de 2026 reforça e detalha essa obrigação, não a cria do zero",
+      "Empresa deve revisar PGR para incluir riscos psicossociais sem aguardar a revisão bienal"
+    ],
+    "references": ["NR-1.5.3.1.4", "NR-1.5.3.2.1", "NR-1.5.4.4.6 alínea e"]
+  },
+  {
+    "id": "NR1-L4-008",
+    "level": 4,
+    "query_pt": "Uma empresa de tecnologia com 100% dos funcionários em home office permanente questiona se a NR-1 se aplica ao ambiente residencial dos trabalhadores e quais são suas obrigações de GRO nesse contexto.",
+    "ground_truth": "A NR-1 define local de trabalho como a área onde são executados os trabalhos, e estabelecimento como o local onde a organização exerce suas atividades. No contexto de home office permanente, o domicílio do trabalhador torna-se seu local de trabalho, o que implica que os riscos ocupacionais gerados por essa modalidade devem ser considerados no GRO. A NR-1 exige que a organização identifique perigos e avalie riscos, incluindo fatores ergonômicos e psicossociais (que são especialmente relevantes no teletrabalho). A organização deve considerar as condições de trabalho nos termos da NR-17. No entanto, os limites da obrigação da empresa sobre o espaço físico privado do trabalhador são objeto de interpretação: a empresa não controla o ambiente residencial, mas deve adotar medidas de prevenção possíveis, como orientações ergonômicas, fornecimento de equipamentos adequados e controle de jornada, registrando essas medidas no PGR.",
+    "key_points": [
+      "Domicílio em home office permanente torna-se local de trabalho para fins das NR",
+      "Riscos ergonômicos e psicossociais do teletrabalho devem estar no PGR",
+      "Empresa deve identificar perigos e avaliar riscos do home office",
+      "Medidas de prevenção possíveis incluem orientações ergonômicas e fornecimento de equipamentos",
+      "Limitações práticas do controle do ambiente privado não eximem a organização de adotar medidas possíveis",
+      "NR-17 (ergonomia) é especialmente relevante e deve ser considerada"
+    ],
+    "references": ["NR-1.5.3.1", "NR-1.5.3.1.4", "NR-1.5.3.2.1", "NR-1 Anexo I (definições de local de trabalho e estabelecimento)"]
+  },
+  {
+    "id": "NR1-L4-009",
+    "level": 4,
+    "query_pt": "Um sindicato solicita acesso ao inventário de riscos e ao plano de ação do PGR de uma empresa. A empresa nega o acesso alegando sigilo comercial sobre os processos descritos. Essa negativa é válida segundo a NR-1?",
+    "ground_truth": "A negativa da empresa não é válida segundo a NR-1. A norma determina expressamente que os documentos integrantes do PGR — incluindo o inventário de riscos e o plano de ação — devem estar sempre disponíveis aos trabalhadores interessados, aos sindicatos representantes das categorias profissionais e à Inspeção do Trabalho. Não há previsão na NR-1 de restrição por sigilo comercial para esses documentos. O argumento de sigilo comercial pode ser válido em outros contextos legais, mas não sobrepõe a obrigação legal expressa de transparência do PGR. A negativa configura descumprimento da NR-1, sujeito a penalidades. O sindicato pode acionar a Inspeção do Trabalho para garantir o acesso.",
+    "key_points": [
+      "PGR deve estar sempre disponível a sindicatos representantes das categorias profissionais",
+      "NR-1 não prevê exceção por sigilo comercial para os documentos do PGR",
+      "Negativa configura descumprimento da NR-1 sujeito a penalidades",
+      "Inspeção do Trabalho também tem direito a acesso amplo e irrestrito",
+      "Sindicato pode acionar a Inspeção do Trabalho para garantir o acesso"
+    ],
+    "references": ["NR-1.5.7.2.1", "NR-1.6.5", "NR-1.9.1"]
+  },
+  {
+    "id": "NR1-L4-010",
+    "level": 4,
+    "query_pt": "Uma empresa realizou todos os treinamentos de SST corretamente, mas não emitiu os certificados formais. Os treinamentos são válidos para fins de cumprimento da NR-1? Quais são as consequências práticas e jurídicas?",
+    "ground_truth": "Os treinamentos realizados sem a emissão dos certificados formais configuram descumprimento parcial da NR-1, pois a norma exige expressamente a emissão de certificado ao término de cada treinamento (inicial, periódico ou eventual), contendo todos os requisitos formais. A ausência do certificado não nulifica o treinamento em si do ponto de vista da proteção do trabalhador, mas representa uma irregularidade documental. As consequências práticas são: impossibilidade de comprovar à Inspeção do Trabalho que os treinamentos foram realizados (presunção de descumprimento); impossibilidade do trabalhador de comprovar sua capacitação para aproveitamento em futura contratação; não registro nos documentos funcionais do empregado; e exposição da empresa a autuações. A NR-1 exige também que a capacitação seja consignada nos documentos funcionais do empregado e que uma cópia do certificado seja arquivada na organização.",
+    "key_points": [
+      "Certificado formal é obrigatório por exigência expressa da NR-1",
+      "Ausência de certificado não nulifica o treinamento mas configura irregularidade documental",
+      "Sem certificado, empresa não pode comprovar o treinamento à Inspeção do Trabalho",
+      "Trabalhador não pode aproveitar o treinamento em futuras contratações sem certificado",
+      "Capacitação deve ser consignada nos documentos funcionais do empregado",
+      "Empresa deve emitir certificados retroativamente para regularização, se possível"
+    ],
+    "references": ["NR-1.7.1.1", "NR-1.7.3", "NR-1.7.4", "NR-1.9.1"]
+  }
+]
