@@ -1,13 +1,21 @@
 # evaluator.py
 import json
 import os
-import google as genai
+from dotenv import load_dotenv
+from google import genai
+from google.genai.types import GenerateContentConfig
 
 # Configure Gemini API key
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-model_id = "gemini-2.5-flash"
-client = genai.Client(api_key=GEMINI_API_KEY)
+# Load API key
+load_dotenv()
+api_key = os.getenv("GEMINI_API_KEY")
 
+if not api_key:
+    raise ValueError("Missing GEMINI_API_KEY in .env file")
+
+# Configure Gemini
+model_id = "gemini-2.5-flash"
+client = genai.Client(api_key=api_key)
 JUDGE_PROMPT_TEMPLATE = """
 You are an expert compliance auditor and LLM Evaluator for Brazilian Regulatory Standards (NR-1).
 Your task is to evaluate an AI agent system's response against a verified Ground Truth and a list of expected Key Points.
