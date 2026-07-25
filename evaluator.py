@@ -42,7 +42,7 @@ Respond ONLY with valid JSON.
 
 def evaluate_with_judge(item: dict, system_output_text: str) -> dict:
     """Uses Gemini as an LLM Judge to grade the system response."""
-    if not GEMINI_API_KEY:
+    if not api_key:
         return {
             "score": 0.0,
             "matched_points": [],
