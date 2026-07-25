@@ -3,7 +3,7 @@
 import json
 
 
-with open("nr_1_docks.json", "r", encoding="utf-8") as f:
+with open("nr_1_docs.json", "r", encoding="utf-8") as f:
     NR1_FRAMEWORK = json.load(f)
 
 with open('nr1_company.json', 'r', encoding='utf-8') as file:
