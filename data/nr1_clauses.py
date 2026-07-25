@@ -6,7 +6,7 @@ import json
 with open("nr_1_docks.json", "r", encoding="utf-8") as f:
     NR1_FRAMEWORK = json.load(f)
 
-with open('nr1_benchmark.json', 'r', encoding='utf-8') as file:
+with open('nr1_company.json', 'r', encoding='utf-8') as file:
     SAMPLE_DOCUMENT = json.load(file)
 
 def get_nr1_requirements():
