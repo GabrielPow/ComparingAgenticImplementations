@@ -97,7 +97,7 @@ def run_single_mode():
 def run_evaluation_mode():
     st.markdown("### LLM-as-a-Judge Evaluation & Benchmarking")
     
-    dataset_path = ROOT / "nr1_benchmark.json"
+    dataset_path = ROOT / "data" / "nr1_benchmark.json"
     if not dataset_path.exists():
         st.error("`eval_dataset.json` not found in root path. Please create it first.")
         return
