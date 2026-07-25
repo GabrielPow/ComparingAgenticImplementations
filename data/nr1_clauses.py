@@ -1,12 +1,17 @@
-# Sample NR-1 Compliance Framework - Security & Data Protection Clauses
-# This data source is shared between Multi-Agent and Multi-Tool implementations
 import json
+from pathlib import Path
 
+# Get the directory where THIS script lives (i.e., the 'data' directory)
+DATA_DIR = Path(__file__).parent
 
-with open("nr_1_docs.json", "r", encoding="utf-8") as f:
+# Construct absolute paths to the JSON files inside the same folder
+nr1_docs_path = DATA_DIR / "nr_1_docs.json"
+company_doc_path = DATA_DIR / "nr1_company.json"
+
+with open(nr1_docs_path, "r", encoding="utf-8") as f:
     NR1_FRAMEWORK = json.load(f)
 
-with open('nr1_company.json', 'r', encoding='utf-8') as file:
+with open(company_doc_path, "r", encoding="utf-8") as file:
     SAMPLE_DOCUMENT = json.load(file)
 
 def get_nr1_requirements():
