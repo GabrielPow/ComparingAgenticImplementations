@@ -1,7 +1,7 @@
 # evaluator.py
 import json
 import os
-import google.generativeai as genai
+import google as genai
 
 # Configure Gemini API key
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")

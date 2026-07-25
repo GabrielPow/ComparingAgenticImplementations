@@ -1,0 +1,92 @@
+[
+  {
+    "clause_id": "NR1.1.1",
+    "chapter": "1.1 Objetivo",
+    "section": "Disposições Gerais",
+    "text_pt": "O objetivo desta Norma é estabelecer as disposições gerais, o campo de aplicação, os termos e as definições comuns às Normas Regulamentadoras - NR relativas a segurança e saúde no trabalho e as diretrizes e os requisitos para o gerenciamento de riscos ocupacionais e as medidas de prevenção em Segurança e Saúde no Trabalho - SST.",
+    "meaning_trabalhista": "Define a NR-1 como a norma-mãe de SST no Brasil, introduzindo obrigatoriedade de gestão ativa de riscos (GRO) em vez de programas estáticos.",
+    "category": "Disposições Gerais",
+    "applies_to": ["Geral", "CLT"],
+    "keywords": ["objetivo", "GRO", "SST", "prevenção"]
+  },
+  {
+    "clause_id": "NR1.2.1.1",
+    "chapter": "1.2 Campo de Aplicação",
+    "section": "Abrangência Legal",
+    "text_pt": "As NR são de observância obrigatória pelas organizações e pelos órgãos públicos da administração direta e indireta, bem como pelos órgãos dos Poderes Legislativo, Judiciário e Ministério Público, que possuam empregados regidos pela Consolidação das Leis do Trabalho – CLT.",
+    "meaning_trabalhista": "Qualquer entidade (pública ou privada) com ao menos um funcionário regido pela CLT deve cumprir integralmente as obrigações da norma.",
+    "category": "Campo de Aplicação",
+    "applies_to": ["CLT", "Órgãos Públicos", "Empresas Privadas"],
+    "keywords": ["CLT", "obrigatoriedade", "organizações"]
+  },
+  {
+    "clause_id": "NR1.4.1",
+    "chapter": "1.4 Direitos e Deveres",
+    "section": "Deveres do Empregador",
+    "text_pt": "Cabe ao empregador cumprir e fazer cumprir as disposições legais e regulamentares sobre segurança e saúde no trabalho, informar os trabalhadores sobre os riscos e implementar medidas de prevenção.",
+    "meaning_trabalhista": "O empregador possui responsabilidade objetiva em manter ambiente seguro, devendo instruir e fornecer os meios adequados aos trabalhadores.",
+    "category": "Responsabilidades",
+    "applies_to": ["Empregador"],
+    "keywords": ["deveres", "empregador", "informar riscos", "prevenção"]
+  },
+  {
+    "clause_id": "NR1.5.3.1",
+    "chapter": "1.5 Gerenciamento de Riscos Ocupacionais (GRO)",
+    "section": "1.5.3 Responsabilidades",
+    "text_pt": "A organização deve implementar, em suas instalações, o gerenciamento de riscos ocupacionais em suas atividades.",
+    "meaning_trabalhista": "Obriga a empresa a ter um processo contínuo de gestão de riscos (GRO), integrando todos os agentes (físicos, químicos, biológicos, ergonômicos e de acidentes).",
+    "category": "GRO",
+    "applies_to": ["Geral"],
+    "keywords": ["GRO", "gerenciamento", "riscos ocupacionais", "implementação"]
+  },
+  {
+    "clause_id": "NR1.5.3.2.1",
+    "chapter": "1.5 Gerenciamento de Riscos Ocupacionais (GRO)",
+    "section": "1.5.3 Programa de Gerenciamento de Riscos (PGR)",
+    "text_pt": "O GRO deve constituir um Programa de Gerenciamento de Riscos - PGR.",
+    "meaning_trabalhista": "O PGR é a materialização documental obrigatoria do processo do GRO. Substituiu o antigo PPRA da NR-9.",
+    "category": "PGR",
+    "applies_to": ["Geral"],
+    "keywords": ["PGR", "programa", "documentação", "materialização"]
+  },
+  {
+    "clause_id": "NR1.5.4.1",
+    "chapter": "1.5 Gerenciamento de Riscos Ocupacionais (GRO)",
+    "section": "1.5.4 Processo de Identificação de Perigos e Avaliação de Riscos",
+    "text_pt": "O processo de identificação de perigos deve contemplar a descrição dos perigos e possíveis lesões ou agravos à saúde, a identificação das fontes ou circunstâncias e a indicação do grupo de trabalhadores sujeitos aos riscos.",
+    "meaning_trabalhista": "A empresa deve mapear o perigo x risco especificando quem é afetado e quais os possíveis danos à saúde.",
+    "category": "Inventário de Riscos",
+    "applies_to": ["Geral"],
+    "keywords": ["perigos", "avaliação de riscos", "lesões", "trabalhadores"]
+  },
+  {
+    "clause_id": "NR1.5.7.1",
+    "chapter": "1.5 Gerenciamento de Riscos Ocupacionais (GRO)",
+    "section": "1.5.7 Documentação do PGR",
+    "text_pt": "O PGR deve conter, no mínimo, os seguintes documentos: a) Inventário de Riscos Ocupacionais; e b) Plano de Ação.",
+    "meaning_trabalhista": "Definição do conteúdo mínimo e obrigatório do PGR. Ausência de qualquer um dos dois gera não conformidade grave.",
+    "category": "Requisitos do PGR",
+    "applies_to": ["PGR"],
+    "keywords": ["Inventário de Riscos", "Plano de Ação", "documentação obrigatória"]
+  },
+  {
+    "clause_id": "NR1.6.1",
+    "chapter": "1.6 Prestação de Informação e Digitalização de Documentos",
+    "section": "1.6.1 Documentos em Meio Digital",
+    "text_pt": "Os documentos previstos nas NR podem ser emitidos, armazenados e arquivados em sistema eletrônico, desde que garantida a sua autenticidade, integridade e disponibilidade, com uso de certificado digital no padrão ICP-Brasil ou outro sistema com nível equivalente de segurança.",
+    "meaning_trabalhista": "Permite guarda digital de documentos de SST (como o PGR), mas exige garantia jurídica de autenticidade e controle de acesso com segurança criptográfica equivalente.",
+    "category": "Digitalização & Segurança",
+    "applies_to": ["Sistemas de Informação", "Documentos Digitais"],
+    "keywords": ["digitalização", "criptografia", "ICP-Brasil", "autenticidade", "integridade"]
+  },
+  {
+    "clause_id": "NR1.6.2",
+    "chapter": "1.6 Prestação de Informação e Digitalização de Documentos",
+    "section": "1.6.2 Acessibilidade e Guarda de Dados",
+    "text_pt": "Os documentos em meio digital devem ficar disponíveis para a inspeção do trabalho, para os trabalhadores e seus representantes, devendo ser mantidos arquivados pelo período mínimo de 20 (vinte) anos, salvo disposição em contrário em NR específica.",
+    "meaning_trabalhista": "Exige política de retenção de dados e logs por pelo menos 20 anos, garantindo controle de acesso para auditorias trabalhistas e trabalhadores.",
+    "category": "Guarda de Dados",
+    "applies_to": ["Conformidade de Dados", "TI / RH"],
+    "keywords": ["retenção 20 anos", "inspeção do trabalho", "acesso a dados"]
+  }
+]

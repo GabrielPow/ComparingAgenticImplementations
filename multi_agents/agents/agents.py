@@ -19,10 +19,10 @@ class RetrieverAgent:
 
 
 class ComplianceAgent:
-    """Performs gap analysis between document and NR-1 norm"""
+    """Performs gap analysis between Tests and NR-1 norm"""
     
     async def analyze(self, retrieved_clauses: str, company_doc: dict):
-        print("[Compliance] Analyzing gaps between document and NR-1 requirements...")
+        print("[Compliance] Analyzing gaps between test samples and NR-1 requirements...")
         result = await asyncio.to_thread(compliance_agent_analyze, retrieved_clauses, company_doc)
         print(f"[Compliance] Gap Analysis:\n{result}")
         return result

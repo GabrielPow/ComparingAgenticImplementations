@@ -5,7 +5,7 @@ Single agent that orchestrates 3 tools in-loop for compliance analysis
 import os
 from dotenv import load_dotenv
 from google import genai
-from google.genai.types import GenerateContentConfig, Tool
+from google import GenerateContentConfig, Tool
 from skills.gemini_tools import TOOLS, retrieval_fetch_tool, reasoning_comparison_tool, validation_tool
 import json
 import re
