@@ -137,7 +137,7 @@ def run_audit_mode():
     # 1. Load default company document with injected traps
     company_doc_path = "data\\nr1_company.json"
     default_json_str = "{}"
-    if company_doc_path.exists():
+    if not company_doc_path:
         with open(company_doc_path, "r", encoding="utf-8") as f:
             default_json_str = f.read()
 
