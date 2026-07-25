@@ -135,7 +135,7 @@ def run_audit_mode():
     st.caption("Upload or paste a target company document to perform an automated full audit in a single API call.")
 
     # 1. Load default company document with injected traps
-    company_doc_path = ROOT / "data" / "company_document.json"
+    company_doc_path = "data\\nr1_company.json"
     default_json_str = "{}"
     if company_doc_path.exists():
         with open(company_doc_path, "r", encoding="utf-8") as f:
