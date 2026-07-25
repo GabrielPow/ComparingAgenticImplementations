@@ -47,7 +47,7 @@ def evaluate_with_judge(item: dict, system_output_text: str) -> dict:
             "score": 0.0,
             "matched_points": [],
             "missed_points": item.get("key_points", []),
-            "hallucination_flags": ["GEMINI_API_KEY missing in environment."],
+            "hallucination_flags": ["Gemini Key missing in environment."],
             "explanation": "Could not run Judge: API key not configured."
         }
 
@@ -60,8 +60,7 @@ def evaluate_with_judge(item: dict, system_output_text: str) -> dict:
     )
 
     try:
-        model = genai.GenerativeModel("gemini-1.5-pro")
-        response = model.generate_content(
+        response = client.models.generate_content(
             formatted_prompt,
             generation_config={"response_mime_type": "application/json"}
         )
