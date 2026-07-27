@@ -41,34 +41,46 @@ class OrchestratorAgent:
         self.compliance = ComplianceAgent()
         self.qa = QAValidationAgent()
 
-    async def run_compliance_analysis(self, query: str, nr1_framework: dict, company_document: dict):
+    async def run_compliance_analysis(self, query: str, nr1_framework: dict | list, company_document: dict):
         print("\n" + "="*70)
         print("ORCHESTRATOR: Starting Compliance Analysis Pipeline")
         print("="*70)
-        
+    
+        # Safely extract keys/identifiers regardless of framework data type
+        if isinstance(nr1_framework, list):
+            available_keys = [
+                item.get("id") or item.get("clause_key") or str(idx) 
+                for idx, item in enumerate(nr1_framework)
+            ]
+        elif isinstance(nr1_framework, dict):
+            available_keys = list(nr1_framework.keys())
+        else:
+            available_keys = []
+
         # Step 1: Decompose
         print(f"\n[Orchestrator] Decomposing query: {query}")
         decomposition = await orchestrator_decompose(
             query,
-            list(nr1_framework.keys())
+            available_keys
         )
         print(f"[Orchestrator] Analysis Plan:\n{decomposition}\n")
-        
+    
         # Step 2: Fetch Clauses
         print("[Orchestrator] Routing to Retriever Agent...")
         retrieved_clauses = await self.retriever.fetch(query, nr1_framework)
-        
+    
         # Step 3: Analyze Gaps
         print("\n[Orchestrator] Routing to Compliance Agent...")
         compliance_result = await self.compliance.analyze(retrieved_clauses, company_document)
-        
+    
         # Step 4: Validate
         print("\n[Orchestrator] Routing to QA Validation Agent...")
         qa_result = await self.qa.validate(compliance_result)
-        
+    
         # Step 5: Aggregate
-        status_pass = qa_result.get("validation_status") == "PASS"
+        status_pass = isinstance(qa_result, dict) and qa_result.get("validation_status") == "PASS"
         aggregated_report = {
+            "agent_summary": str(compliance_result), # Ensures clean text tab picks it up
             "query": query,
             "decomposition": decomposition,
             "retrieved_clauses": retrieved_clauses,
@@ -76,10 +88,10 @@ class OrchestratorAgent:
             "validation_verdict": qa_result,
             "status": "COMPLETE ✅" if status_pass else "NEEDS REVIEW ⚠️"
         }
-        
+    
         print("\n" + "="*70)
         print("ORCHESTRATOR: Final Aggregated Report")
         print("="*70)
-        print(json.dumps(aggregated_report, indent=2))
-        
+        print(json.dumps(aggregated_report, indent=2, ensure_ascii=False))
+    
         return aggregated_report
