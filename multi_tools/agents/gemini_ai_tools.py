@@ -5,7 +5,7 @@ from google import genai
 from google.genai import types
 
 # Import python tool implementations directly
-from skills.gemini_tools import (
+from multi_tools.skills.gemini_skills import (
     retrieval_fetch_tool,
     reasoning_comparison_tool,
     validation_tool

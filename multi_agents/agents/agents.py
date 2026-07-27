@@ -1,6 +1,6 @@
 import asyncio
 import json
-from gemini_ai import (
+from gemini_ai_agents import (
     orchestrator_decompose,
     retrieval_agent_fetch,
     compliance_agent_analyze,

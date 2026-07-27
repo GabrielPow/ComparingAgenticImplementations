@@ -25,7 +25,7 @@ except Exception as e:
     orchestrator_error = e
 
 try:
-    from multi_tools.agents.gemini_ai import compliance_agent as tools_compliance_agent
+    from multi_tools.agents.gemini_ai_tools import compliance_agent as tools_compliance_agent
     tools_agent_available = True
 except Exception as e:
     tools_error = e
@@ -197,10 +197,38 @@ def run_audit_mode():
         st.divider()
         st.subheader("3. Audit Report vs. Ground-Truth Matrix")
 
-        tab_report, tab_matrix = st.tabs(["🤖 Model Output Report", "🎯 Ground-Truth Evaluation Matrix"])
+        # Added a new tab "📝 Clean Audit Report"
+        tab_text, tab_report, tab_matrix = st.tabs([
+            "📝 Clean Audit Report", 
+            "🤖 Raw JSON Output", 
+            "🎯 Ground-Truth Evaluation Matrix"
+        ])
+
+        result = st.session_state.audit_result
+
+        with tab_text:
+            st.markdown("### Executive Audit Summary")
+            
+            # Helper to pull text regardless of exact key name returned by your agent
+            extracted_text = ""
+            if isinstance(result, dict):
+                extracted_text = (
+                    result.get("agent_summary") or 
+                    result.get("response") or 
+                    result.get("output") or 
+                    result.get("result") or 
+                    ""
+                )
+            elif isinstance(result, str):
+                extracted_text = result
+
+            if extracted_text:
+                st.markdown(extracted_text)
+            else:
+                st.warning("Could not automatically locate the plain text field in the output dictionary. Check the 'Raw JSON Output' tab.")
 
         with tab_report:
-            st.json(st.session_state.audit_result)
+            st.json(result)
 
         with tab_matrix:
             st.markdown("Compare the model's audit findings against the 11 injected violations:")

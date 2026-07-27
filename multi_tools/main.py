@@ -2,7 +2,7 @@
 Multi-Tool Compliance Agent System
 Single agent orchestrates 3 tools in-loop for compliance analysis
 """
-from agents.gemini_ai import compliance_agent
+from multi_tools.agents.gemini_ai_tools import compliance_agent
 import json
 
 
